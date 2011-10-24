@@ -1,0 +1,55 @@
+﻿Build started 20-10-2011 19:02:40.
+     1>Project "C:\Users\Borges\Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\cglib\scripts\vs2010\cglib.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\..\obj\Release\cglib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\freeglut\include /I..\..\src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D GLEW_STATIC /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\Release\\" /Fd"..\..\obj\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\cg\Application.cpp ..\..\src\cg\DebugFile.cpp ..\..\src\cg\DebugNotifier.cpp ..\..\src\cg\DrawNotifier.cpp ..\..\src\cg\Group.cpp ..\..\src\cg\KeyboardEventNotifier.cpp ..\..\src\cg\KeyBuffer.cpp ..\..\src\cg\Manager.cpp ..\..\src\cg\MouseEventNotifier.cpp ..\..\src\cg\Properties.cpp ..\..\src\cg\Registry.cpp ..\..\src\cg\ReshapeEventNotifier.cpp ..\..\src\cg\Shader.cpp ..\..\src\cg\ShaderManager.cpp ..\..\src\cg\UpdateNotifier.cpp ..\..\src\cg\Util.cpp ..\..\src\cg\View.cpp ..\..\src\cg\ViewNotifier.cpp
+         Application.cpp
+         DebugFile.cpp
+         DebugNotifier.cpp
+         DrawNotifier.cpp
+         Group.cpp
+         KeyboardEventNotifier.cpp
+         KeyBuffer.cpp
+         Manager.cpp
+         MouseEventNotifier.cpp
+         Properties.cpp
+         Registry.cpp
+         ReshapeEventNotifier.cpp
+         Shader.cpp
+         ShaderManager.cpp
+         UpdateNotifier.cpp
+         Util.cpp
+         View.cpp
+         ViewNotifier.cpp
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\freeglut\include /I..\..\src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D GLEW_STATIC /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\Release\\" /Fd"..\..\obj\Release\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\GL\glew.c
+         glew.c
+       Lib:
+         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\bin\Release\cglib.lib" /NOLOGO /LTCG ..\..\obj\Release\Application.obj
+         ..\..\obj\Release\DebugFile.obj
+         ..\..\obj\Release\DebugNotifier.obj
+         ..\..\obj\Release\DrawNotifier.obj
+         ..\..\obj\Release\Group.obj
+         ..\..\obj\Release\KeyboardEventNotifier.obj
+         ..\..\obj\Release\KeyBuffer.obj
+         ..\..\obj\Release\Manager.obj
+         ..\..\obj\Release\MouseEventNotifier.obj
+         ..\..\obj\Release\Properties.obj
+         ..\..\obj\Release\Registry.obj
+         ..\..\obj\Release\ReshapeEventNotifier.obj
+         ..\..\obj\Release\Shader.obj
+         ..\..\obj\Release\ShaderManager.obj
+         ..\..\obj\Release\UpdateNotifier.obj
+         ..\..\obj\Release\Util.obj
+         ..\..\obj\Release\View.obj
+         ..\..\obj\Release\ViewNotifier.obj
+         ..\..\obj\Release\glew.obj
+         cglib.vcxproj -> C:\Users\Borges\Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\cglib\scripts\vs2010\..\..\bin\Release\cglib.lib
+       FinalizeBuildStatus:
+         Deleting file "..\..\obj\Release\cglib.unsuccessfulbuild".
+         Touching "..\..\obj\Release\cglib.lastbuildstate".
+     1>Done Building Project "C:\Users\Borges\Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\cglib\scripts\vs2010\cglib.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.23

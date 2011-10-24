@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8AED7839-6241-45CD-9ACE-651B8CC3B4D4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cglib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>..\..\obj\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.log;*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>..\..\obj\$(Configuration)\</IntDir>
+    <ExtensionsToDeleteOnClean>*.log;*.cdf;*.cache;*.obj;*.ilk;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\freeglut\include;..\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>GLEW_STATIC;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\freeglut\include;..\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cg\Application.cpp" />
+    <ClCompile Include="..\..\src\cg\DebugFile.cpp" />
+    <ClCompile Include="..\..\src\cg\DebugNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\DrawNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\Group.cpp" />
+    <ClCompile Include="..\..\src\cg\KeyboardEventNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\KeyBuffer.cpp" />
+    <ClCompile Include="..\..\src\cg\Manager.cpp" />
+    <ClCompile Include="..\..\src\cg\MouseEventNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\Properties.cpp" />
+    <ClCompile Include="..\..\src\cg\Registry.cpp" />
+    <ClCompile Include="..\..\src\cg\ReshapeEventNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\Shader.cpp" />
+    <ClCompile Include="..\..\src\cg\ShaderManager.cpp" />
+    <ClCompile Include="..\..\src\cg\UpdateNotifier.cpp" />
+    <ClCompile Include="..\..\src\cg\Util.cpp" />
+    <ClCompile Include="..\..\src\cg\View.cpp" />
+    <ClCompile Include="..\..\src\cg\ViewNotifier.cpp" />
+    <ClCompile Include="..\..\src\GL\glew.c">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\freeglut\include;..\..\src</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\cg\Application.h" />
+    <ClInclude Include="..\..\src\cg\cg.h" />
+    <ClInclude Include="..\..\src\cg\CommandQueue.h" />
+    <ClInclude Include="..\..\src\cg\DebugFile.h" />
+    <ClInclude Include="..\..\src\cg\DebugNotifier.h" />
+    <ClInclude Include="..\..\src\cg\DrawNotifier.h" />
+    <ClInclude Include="..\..\src\cg\Entity.h" />
+    <ClInclude Include="..\..\src\cg\gl.h" />
+    <ClInclude Include="..\..\src\cg\Group.h" />
+    <ClInclude Include="..\..\src\cg\GroupDebug.h" />
+    <ClInclude Include="..\..\src\cg\GroupDraw.h" />
+    <ClInclude Include="..\..\src\cg\GroupKeyboardEvent.h" />
+    <ClInclude Include="..\..\src\cg\GroupMouseEvent.h" />
+    <ClInclude Include="..\..\src\cg\GroupReshapeEvent.h" />
+    <ClInclude Include="..\..\src\cg\GroupUpdate.h" />
+    <ClInclude Include="..\..\src\cg\IDebugListener.h" />
+    <ClInclude Include="..\..\src\cg\IDrawListener.h" />
+    <ClInclude Include="..\..\src\cg\IKeyboardEventListener.h" />
+    <ClInclude Include="..\..\src\cg\IMouseEventListener.h" />
+    <ClInclude Include="..\..\src\cg\IReshapeEventListener.h" />
+    <ClInclude Include="..\..\src\cg\IUpdateListener.h" />
+    <ClInclude Include="..\..\src\cg\IViewListener.h" />
+    <ClInclude Include="..\..\src\cg\KeyboardEventNotifier.h" />
+    <ClInclude Include="..\..\src\cg\KeyBuffer.h" />
+    <ClInclude Include="..\..\src\cg\LockableOrderedMap.h" />
+    <ClInclude Include="..\..\src\cg\Manager.h" />
+    <ClInclude Include="..\..\src\cg\MouseEventNotifier.h" />
+    <ClInclude Include="..\..\src\cg\Notifier.h" />
+    <ClInclude Include="..\..\src\cg\Properties.h" />
+    <ClInclude Include="..\..\src\cg\Quaternion.h" />
+    <ClInclude Include="..\..\src\cg\Registry.h" />
+    <ClInclude Include="..\..\src\cg\ReshapeEventNotifier.h" />
+    <ClInclude Include="..\..\src\cg\Shader.h" />
+    <ClInclude Include="..\..\src\cg\ShaderManager.h" />
+    <ClInclude Include="..\..\src\cg\Singleton.h" />
+    <ClInclude Include="..\..\src\cg\State.h" />
+    <ClInclude Include="..\..\src\cg\Test.h" />
+    <ClInclude Include="..\..\src\cg\TestSuite.h" />
+    <ClInclude Include="..\..\src\cg\UpdateNotifier.h" />
+    <ClInclude Include="..\..\src\cg\Util.h" />
+    <ClInclude Include="..\..\src\cg\Vector.h" />
+    <ClInclude Include="..\..\src\cg\View.h" />
+    <ClInclude Include="..\..\src\cg\ViewNotifier.h" />
+    <ClInclude Include="..\..\src\GL\glew.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
