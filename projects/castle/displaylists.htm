@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<title>Display Lists</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body stylesrc="../home.htm" bgcolor="#000000" text="#FF0000" link="#ABABAB" vlink="#D6B001" alink="#FFFF00">
+<font size="3">
+
+<p></font><font size="6"><strong>Display Lists</strong></font> 
+
+<ul>
+  <font size="3">
+  <li>What display lists are</li>
+  <li>When you should use them</li>
+  </font>
+</ul>
+<font size="3">
+
+<p></font><font size="4"><strong>What are Display Lists?</strong></font><font size="3"></p>
+</font>
+
+<p><font size="3">Display lists are another technique to improve performance. You can make
+some gl* calls and OpenGL will save them and their parameters. After this you can execute
+those calls by calling the display list. This causes less overhead in the functions, and
+another aspect is, that there is no (time expensive) data transfer. </font></p>
+
+<p><font size="4"><strong>When should I use Display Lists?</strong></font></p>
+
+<p><font size="3">Display lists are mostly used to store static objects. Note that it
+wouldn't be possible to render such an object like the &quot;sphere&quot; from the vertex
+array tutorial, because you cannot change any data in a display list (of course you can
+apply transformations to he whole list, but not to certain vertices). They are also used,
+when you have to compute their vertices - instead of computing them each time you render
+your scene, you can also store the results of your calculations in a display list. It
+would also be possible to use vertex arrays - ok. But there are some other differences:
+Vertex arrays don't need as much memory, sometimes you really have to care for that
+aspect. But display lists are generally a bit faster than vertex arrays. And one important
+thing is, that you cannot change state variable in vertex arrays (except the color, NVects
+and so on, of course). That means, it would be a bit more difficult to render an object
+with vertex arrays, when you have to use different material properties or want to change
+the modelview matrix. </font></p>
+
+<p><font size="3">Another field, where display lists are used, is when you write some
+simple text (or even 3d-text):You could create a list for each letter and write a routine,
+that calls the right list for each letter in a string.</font></p>
+
+<p><font size="3">Or you could create a list to make changes of state variables faster.</font></p>
+
+<p><font size="4"><strong>How can I use Display Lists?</strong></font></p>
+
+<p><font size="3">First you have to get a number for your lists. This is done by <em>Num =
+glGenLists(1)</em>. Now&nbsp; you can call <em>glNewList(Num, GL_COMPILE),</em> make the
+calls that shall be stored in the list and the finish the list with <em>glEndList()</em>.</font></p>
+
+<p><font size="3">This is already all you have to know, click <a href="../opengl.htm#DisplayLists">here</a> to see an example for display lists.</font></p>
+
+<p><font size="3"><a href="../opengl.htm">Back</a></font></p>
+
+<p><big>**************************************************************************</big></p>
+
+<p><big>Any comments? Conact me!</big></p>
+
+<p><big><a href="mailto:philipp.crocoll@web.de">philipp.crocoll@web.de</a></big></p>
+
+<p><big><a href="http://www.codecolony.de">www.codecolony.de</a></big></p>
+
+<p>&nbsp;</p>
+</body>
+</html>

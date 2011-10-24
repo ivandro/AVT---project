@@ -1,0 +1,17 @@
+﻿Build started 24-10-2011 14:03:00.
+     1>Project "C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\example.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "..\..\obj\Release\example.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         example.vcxproj -> C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\..\..\..\bin\Release\example.exe
+       FinalizeBuildStatus:
+         Deleting file "..\..\obj\Release\example.unsuccessfulbuild".
+         Touching "..\..\obj\Release\example.lastbuildstate".
+     1>Done Building Project "C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\example.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.30
