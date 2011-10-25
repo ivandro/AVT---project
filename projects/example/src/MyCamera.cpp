@@ -33,6 +33,8 @@ namespace example {
 		_right.set(0,0,1);
 		_isRoll = false;
 		_isTopMode = false;
+		_isDebug = false;
+		_physics.setPosition(3,1.01,-3);//asneirada
     }
     void MyCamera::draw() {
 		if(_isTopMode){
@@ -43,6 +45,10 @@ namespace example {
 			glMatrixMode(GL_MODELVIEW);
 			glLoadIdentity();
 			gluLookAt(_position[0],_position[1],_position[2],0,0,0,_up[0],_up[1],_up[2]);
+			glPushMatrix();
+				_physics.applyTransforms();
+				//glCallList(_modelDL);
+			glPopMatrix();
 		}
     }
 	void MyCamera::onReshape(int width, int height) {
@@ -75,12 +81,36 @@ namespace example {
 	}
 	void MyCamera::onMousePassiveMotion(int x, int y) {
 	}
+
+	void MyCamera::update(unsigned long elapsed_millis) { //DOESNT WORK!
+		if(_isDebug){
+			double elapsed_seconds = elapsed_millis / (double)1000;
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_UP)) {
+				_physics.goAhead();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_DOWN)) {
+				_physics.goBack();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_LEFT)) {
+				_physics.yawLeft();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_RIGHT)) {
+				_physics.yawRight();
+			}
+			_physics.step(elapsed_seconds);
+		}
+	}
+
 	void MyCamera::toggleTopMode() {
 		_isTopMode = !_isTopMode;
 
 	}
+		
+	void MyCamera::toggleDebugMode() {
+		_isDebug = !_isDebug;
+	}
 
-		void MyCamera::setPosition(cg::Vector3d position){
+	void MyCamera::setPosition(cg::Vector3d position){
 		_position.set(position);
 
 	}

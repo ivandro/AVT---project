@@ -57,6 +57,10 @@ namespace example {
 		_isFPSMode = !_isFPSMode;
 	}
 
+	bool MyFPSCamera::isActive(){
+		return _isFPSMode;
+	}
+
 
 	void MyFPSCamera::setPosition(cg::Vector3d position){
 		_position.set(position);
