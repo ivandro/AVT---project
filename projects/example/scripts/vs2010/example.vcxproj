@@ -19,6 +19,7 @@
     <ClCompile Include="..\..\src\Heart.cpp" />
     <ClCompile Include="..\..\src\Key.cpp" />
     <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\Material.cpp" />
     <ClCompile Include="..\..\src\MaterialBank.cpp" />
     <ClCompile Include="..\..\src\MyApp.cpp" />
     <ClCompile Include="..\..\src\MyBox.cpp" />
@@ -44,6 +45,7 @@
     <ClInclude Include="..\..\src\GrassWorldFactory.h" />
     <ClInclude Include="..\..\src\Heart.h" />
     <ClInclude Include="..\..\src\Key.h" />
+    <ClInclude Include="..\..\src\Material.h" />
     <ClInclude Include="..\..\src\MaterialBank.h" />
     <ClInclude Include="..\..\src\MyApp.h" />
     <ClInclude Include="..\..\src\MyBox.h" />

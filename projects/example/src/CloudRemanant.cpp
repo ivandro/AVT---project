@@ -18,8 +18,6 @@ namespace example {
 		}
 		void CloudRemanant::update(unsigned long elapsed_millis){
 			_shrinkVal -=0.05f;
-			std::cout << "Shrinkval: " <<_shrinkVal << std::endl;
-
 			if(_shrinkVal <= 0.0f){
 				cg::Registry::instance()->get("ResidualCloud")->state.disable();
 				_shrinkVal = 1.0f;
@@ -27,10 +25,9 @@ namespace example {
 		}
 		void CloudRemanant::draw(){
 
-		glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, MaterialBank::getAmbientVec(MaterialBank::MATERIAL_PEARL));
-		glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, MaterialBank::getDiffuseVec(MaterialBank::MATERIAL_PEARL));
-		glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, MaterialBank::getSpecularVec(MaterialBank::MATERIAL_PEARL));
-	    glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, MaterialBank::getShininess(MaterialBank::MATERIAL_PEARL));
+		 
+		 Material m = MaterialBank::getMaterial(MaterialBank::MATERIAL_PEARL);
+		 m.shade(GL_FRONT_AND_BACK);
 
 		glPushMatrix();
 		glTranslated(_pos[0],_pos[1],_pos[2]);

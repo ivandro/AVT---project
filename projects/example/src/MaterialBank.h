@@ -2,6 +2,7 @@
 #define MATERIAL_BANK
 
 #include "cg/cg.h"
+#include "Material.h"
 
 namespace example{
 
@@ -41,29 +42,11 @@ public:
 	MATERIAL_RUBBER_WHITE,
 	MATERIAL_RUBBER_YELLOW};
 
-	enum materialParam
-	{MATERIAL_AMBIENT_R,
-	MATERIAL_AMBIENT_G,
-	MATERIAL_AMBIENT_B,
-	MATERIAL_DIFFUSE_R,
-	MATERIAL_DIFFUSE_G,
-	MATERIAL_DIFFUSE_B,
-	MATERIAL_SPECULAR_R,
-	MATERIAL_SPECULAR_G,
-	MATERIAL_SPECULAR_B,
-	MATERIAL_SHININESS};
-
 	MaterialBank(void);
 	~MaterialBank(void);
 
-	static GLfloat getParam(materialType type, materialParam param);
-	static GLfloat * getAmbientVec(materialType type);
-	static GLfloat * getDiffuseVec(materialType type);
-	static GLfloat * getSpecularVec(materialType type);
-	static GLfloat * getAmbientVec(materialType type,GLfloat lastValue);
-	static GLfloat * getDiffuseVec(materialType type,GLfloat lastValue);
-	static GLfloat * getSpecularVec(materialType type,GLfloat lastValue);
-	static GLfloat getShininess(materialType type);
+	static Material getMaterial(materialType type);
 };
+
 }
 #endif

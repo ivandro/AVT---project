@@ -5,6 +5,7 @@
 #include "MyPhysics.h"
 #include "MyCamera.h"
 #include "MaterialBank.h"
+#include "Material.h"
 #include "CloudRemanant.h"
 namespace example {
 

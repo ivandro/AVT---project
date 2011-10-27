@@ -1,3 +1,4 @@
+
 // This file is an example for CGLib.
 //
 // CGLib is free software; you can redistribute it and/or modify

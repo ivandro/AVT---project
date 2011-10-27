@@ -51,10 +51,9 @@ namespace example {
 		 glPushMatrix();
 		 _physics.applyTransforms();
 		 glScaled(0.8*_shrinkVal,0.4,0.5); //Flattens the cloud Note when mooving make it shrink and expand by changing the z value according to
-		 glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, MaterialBank::getAmbientVec(MaterialBank::MATERIAL_PEARL));
-		 glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, MaterialBank::getDiffuseVec(MaterialBank::MATERIAL_PEARL));
-		 glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, MaterialBank::getSpecularVec(MaterialBank::MATERIAL_PEARL));
-	     glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, MaterialBank::getShininess(MaterialBank::MATERIAL_PEARL));
+		 
+		 Material m = MaterialBank::getMaterial(MaterialBank::MATERIAL_PEARL);
+		 m.shade(GL_FRONT_AND_BACK);
 		
 		 glutSolidSphere(1,5,10);
 		 glTranslated(1,0,0);

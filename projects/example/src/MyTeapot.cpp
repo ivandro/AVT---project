@@ -40,11 +40,8 @@ namespace example {
 		_materialDL = glGenLists(1);
 		assert(_materialDL != 0);
 		glNewList(_materialDL,GL_COMPILE);
-			 glMaterialfv(GL_FRONT,GL_EMISSION ,mat_emission);
-			 glMaterialfv(GL_FRONT, GL_AMBIENT, MaterialBank::getAmbientVec(MaterialBank::MATERIAL_GOLD));
-			 glMaterialfv(GL_FRONT, GL_DIFFUSE, MaterialBank::getDiffuseVec(MaterialBank::MATERIAL_GOLD));
-			 glMaterialfv(GL_FRONT, GL_SPECULAR, MaterialBank::getSpecularVec(MaterialBank::MATERIAL_GOLD));
-			 glMaterialf(GL_FRONT, GL_SHININESS, MaterialBank::getShininess(MaterialBank::MATERIAL_GOLD));
+				 Material m = MaterialBank::getMaterial(MaterialBank::MATERIAL_GOLD);
+				 m.shade(GL_FRONT_AND_BACK);
 		glEndList();
 	}
 	void MyTeapot::init() {
