@@ -1,17 +1,61 @@
-﻿Build started 24-10-2011 14:03:00.
-     1>Project "C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\example.vcxproj" on node 2 (build target(s)).
-     1>InitializeBuildStatus:
-         Creating "..\..\obj\Release\example.unsuccessfulbuild" because "AlwaysCreate" was specified.
-       ClCompile:
-         All outputs are up-to-date.
-       Link:
-         All outputs are up-to-date.
-         example.vcxproj -> C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\..\..\..\bin\Release\example.exe
-       FinalizeBuildStatus:
-         Deleting file "..\..\obj\Release\example.unsuccessfulbuild".
-         Touching "..\..\obj\Release\example.lastbuildstate".
-     1>Done Building Project "C:\Users\Celcius\Documents\My Dropbox\Mestrado 1º ano 1º semestre\AVT\cglib.dev\projects\example\scripts\vs2010\example.vcxproj" (build target(s)).
+﻿Build started 25-10-2011 23:19:31.
+Project "C:\Users\Daniela Borges\.ssh\AVT---project\projects\example\scripts\vs2010\example.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "..\..\obj\Release\example.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\freeglut\include /I..\..\..\..\freeimage\include /I..\..\..\..\cglib\src /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D GLEW_STATIC /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"..\..\obj\Release\\" /Fd"..\..\obj\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\MyCamera.cpp
+  MyCamera.cpp
+Link:
+  c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\bin\Release\example.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:..\..\..\..\freeglut\lib /LIBPATH:..\..\..\..\freeimage\lib /LIBPATH:..\..\..\..\cglib\bin\Release\ freeglut.lib freeimage.lib cglib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"..\..\obj\Release\example.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\example.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\bin\Release\example.lib" /MACHINE:X86 ..\..\obj\Release\BrickWall.obj
+  ..\..\obj\Release\Cloud.obj
+  ..\..\obj\Release\CloudRemanant.obj
+  ..\..\obj\Release\GrassWall.obj
+  ..\..\obj\Release\GrassWorldFactory.obj
+  ..\..\obj\Release\Heart.obj
+  ..\..\obj\Release\Key.obj
+  ..\..\obj\Release\main.obj
+  ..\..\obj\Release\MaterialBank.obj
+  ..\..\obj\Release\MyApp.obj
+  ..\..\obj\Release\MyBox.obj
+  ..\..\obj\Release\MyCamera.obj
+  ..\..\obj\Release\MyController.obj
+  ..\..\obj\Release\MyFPSCamera.obj
+  ..\..\obj\Release\MyLight.obj
+  ..\..\obj\Release\MyPhysics.obj
+  ..\..\obj\Release\MyQuadric.obj
+  ..\..\obj\Release\MyScene.obj
+  ..\..\obj\Release\MyTeapot.obj
+  ..\..\obj\Release\MyTexturedBox.obj
+  ..\..\obj\Release\MyWorld.obj
+  ..\..\obj\Release\NightWorldFactoy.obj
+  ..\..\obj\Release\Wall.obj
+  ..\..\obj\Release\WorldFactory.obj
+  Generating code
+  Finished generating code
+cglib.lib(KeyBuffer.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(KeyBuffer.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(Registry.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(Registry.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(Manager.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(Manager.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(Application.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(Application.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(View.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(View.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(Util.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(Util.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(KeyboardEventNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(KeyboardEventNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(DebugNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(DebugNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(ViewNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(ViewNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(UpdateNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(UpdateNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(MouseEventNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(MouseEventNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(ReshapeEventNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(ReshapeEventNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(DebugFile.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(DebugFile.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(glew.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(glew.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(Properties.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(Properties.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+cglib.lib(DrawNotifier.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'cglib.lib(DrawNotifier.obj)' or at 'C:\Users\Daniela Borges\.ssh\AVT---project\projects\bin\Release\vc100.pdb'; linking object as if no debug info
+  example.vcxproj -> C:\Users\Daniela Borges\.ssh\AVT---project\projects\example\scripts\vs2010\..\..\..\bin\Release\example.exe
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\..\bin\Release\example.exe;#1" /manifest ..\..\obj\Release\example.exe.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "..\..\obj\Release\example.unsuccessfulbuild".
+  Touching "..\..\obj\Release\example.lastbuildstate".
+Done Building Project "C:\Users\Daniela Borges\.ssh\AVT---project\projects\example\scripts\vs2010\example.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.30
+Time Elapsed 00:00:22.96

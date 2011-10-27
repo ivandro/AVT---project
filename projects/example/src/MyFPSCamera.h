@@ -44,6 +44,7 @@ namespace example {
         void draw();
         void onReshape(int width, int height);
 		void toggleFPSMode();
+		bool isActive();
 		void setPosition(cg::Vector3d position);
 	};
 }

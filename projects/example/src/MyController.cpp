@@ -57,6 +57,18 @@ namespace example {
 			if(cl) {
 				cl->toggleDebugMode();
 			}
+
+			MyFPSCamera *fpscamera = (MyFPSCamera*)cg::Registry::instance()->get("FPSCamera");
+
+			if(fpscamera->isActive()) {
+				fpscamera->toggleFPSMode();	
+				MyCamera *camera = (MyCamera*)cg::Registry::instance()->get("Camera");
+				if(camera){
+					camera->toggleTopMode(); 
+					camera->toggleDebugMode(); //pode dar asneirada, sai de debugmode como?
+				}			
+			}
+		
         }
 		 if (key == GLUT_KEY_F3) {
 			MyFPSCamera *fpscamera = (MyFPSCamera*)cg::Registry::instance()->get("FPSCamera");

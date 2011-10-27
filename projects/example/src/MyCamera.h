@@ -21,13 +21,15 @@
 
 #include <string>
 #include "cg/cg.h"
+#include "MyPhysics.h"
 
 namespace example {
 
     class MyCamera : public cg::Entity, 
 		public cg::IDrawListener,
 		public cg::IReshapeEventListener,
-		public cg::IMouseEventListener
+		public cg::IMouseEventListener,
+		public cg::IUpdateListener
 	{
     private:
 		cg::Vector2d _winSize;
@@ -37,6 +39,8 @@ namespace example {
 		cg::Vector2d _lastMousePosition;
 		bool _isRoll;
 		bool _isTopMode;
+		bool _isDebug;
+		MyPhysics _physics;
 
     public:
         MyCamera();
@@ -48,7 +52,9 @@ namespace example {
         void onMouseMotion(int x, int y);
         void onMousePassiveMotion(int x, int y);
 		void toggleTopMode();
+		void toggleDebugMode();
 		void setPosition(cg::Vector3d pos);
+		void update(unsigned long elapsed_millis);
 	};
 }
 

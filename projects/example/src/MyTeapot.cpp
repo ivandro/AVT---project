@@ -57,32 +57,24 @@ namespace example {
 		_debugMode = false;
 	}
 	void MyTeapot::update(unsigned long elapsed_millis) {
-		double elapsed_seconds = elapsed_millis / (double)1000;
-		if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_UP)) {
-			_physics.goAhead();
-		}
-		if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_DOWN)) {
-			_physics.goBack();
-		}
-		if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_LEFT)) {
-			_physics.yawLeft();
-		}
-		if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_RIGHT)) {
-			_physics.yawRight();
-		}
-		if(cg::KeyBuffer::instance()->isKeyDown('z')) {
-			_physics.pitchUp();
-		}
-		if(cg::KeyBuffer::instance()->isKeyDown('q')) {
-			_physics.pitchDown();
-		}
-		if(cg::KeyBuffer::instance()->isKeyDown('x')) {
-			_physics.rollLeft();
-		}
-		if(cg::KeyBuffer::instance()->isKeyDown('c')) {
-			_physics.rollRight();
-		}
+		
+		if(!_debugMode){
+			double elapsed_seconds = elapsed_millis / (double)1000;
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_UP)) {
+				_physics.goAhead();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_DOWN)) {
+				_physics.goBack();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_LEFT)) {
+				_physics.yawLeft();
+			}
+			if(cg::KeyBuffer::instance()->isSpecialKeyDown(GLUT_KEY_RIGHT)) {
+				_physics.yawRight();
+			}
+		
 		_physics.step(elapsed_seconds);
+		}
 	}
 	void MyTeapot::draw() {
 		if(_debugMode) {

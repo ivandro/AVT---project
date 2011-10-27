@@ -32,7 +32,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template", "..\..\projects\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example", "..\..\projects\example\scripts\vs2010\example.vcxproj", "{ED1BBF93-77A0-4566-85A7-688F9F2F23FD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Castle", "..\..\projects\castle\Castle.vcxproj", "{CD962723-CC2D-461D-96A3-DF7CFCC91D67}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Castle", "..\..\projects\castle\Castle.vcxproj", "{DA4ABB1E-4741-9F4A-4A18-80C1586C9E75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,10 +72,10 @@ Global
 		{ED1BBF93-77A0-4566-85A7-688F9F2F23FD}.Debug|Win32.Build.0 = Debug|Win32
 		{ED1BBF93-77A0-4566-85A7-688F9F2F23FD}.Release|Win32.ActiveCfg = Release|Win32
 		{ED1BBF93-77A0-4566-85A7-688F9F2F23FD}.Release|Win32.Build.0 = Release|Win32
-		{CD962723-CC2D-461D-96A3-DF7CFCC91D67}.Debug|Win32.ActiveCfg = Debug|Win32
-		{CD962723-CC2D-461D-96A3-DF7CFCC91D67}.Debug|Win32.Build.0 = Debug|Win32
-		{CD962723-CC2D-461D-96A3-DF7CFCC91D67}.Release|Win32.ActiveCfg = Release|Win32
-		{CD962723-CC2D-461D-96A3-DF7CFCC91D67}.Release|Win32.Build.0 = Release|Win32
+		{DA4ABB1E-4741-9F4A-4A18-80C1586C9E75}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA4ABB1E-4741-9F4A-4A18-80C1586C9E75}.Debug|Win32.Build.0 = Debug|Win32
+		{DA4ABB1E-4741-9F4A-4A18-80C1586C9E75}.Release|Win32.ActiveCfg = Release|Win32
+		{DA4ABB1E-4741-9F4A-4A18-80C1586C9E75}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
